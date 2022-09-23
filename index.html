@@ -3,24 +3,39 @@
 <html>
 
 <head>
-  <title>Home Page</title>
-  <link rel="styles" href="stylesheet.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Home</title>
 </head>
 
-<header>
-  <h1>Hello There!</h1>
-
-  <h2>This website is currently in development and changes will be made overtime!</h2>
-</header>
-
-<nav>
-  <h3>My Links</h3>
-
-  <p><a href="picture-viewer.html" alt="Pictures">Photographs</a></p>
-</nav>
-
 <body>
+
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">Tanner Hess</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li class="services">
+           <a href="/">Resources</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="picture-viewer.html">Pictures</a></li>
+           </ul>
+         </li>
+       </div>
+     </ul>
+   </nav>
+
+   <h1>This page is under development. Changes will be made over time.</h1>
 
 </body>
 

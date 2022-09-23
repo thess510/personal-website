@@ -3,11 +3,39 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Pictures</title>
 </head>
 
 <body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">Tanner Hess</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="services">
+          <a href="/">Resources</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="picture-viewer.html">Pictures</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+
   <img src="travel-logo.png" alt="Travel Logo" height="500">
+
 </body>
 
 </html>
